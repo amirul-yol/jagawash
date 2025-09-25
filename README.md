@@ -1,36 +1,137 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# JagaWash - Car Detailing Booking System
 
-## Getting Started
+A modern, mobile-first web application for car detailing businesses to streamline their booking process and replace WhatsApp-based reservations with a professional online system.
 
-First, run the development server:
+## 🚗 Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+JagaWash is a complete booking solution designed specifically for car wash and detailing businesses. It provides customers with a seamless 6-step booking experience while automatically notifying business owners via email.
+
+### ✨ Key Features
+
+- **📱 Mobile-First Design** - Optimized for smartphone users transitioning from WhatsApp
+- **💰 Transparent Pricing** - Clear upfront costs for all services and add-ons
+- **📅 Smart Scheduling** - Date/time picker with business hours validation
+- **📧 Email Notifications** - Automated booking confirmations sent to business owner
+- **🎨 Professional UI** - Clean, modern interface with smooth animations
+- **✅ Form Validation** - Comprehensive validation with Malaysian phone/plate number patterns
+
+### 🛠️ Service Options
+
+**Main Packages:**
+- Basic Package (RM20) - ~30 minutes
+- Plus Package (RM50) - ~45 minutes  
+- Premium Package (RM70) - ~60 minutes
+
+**Add-On Services:**
+- Pet Hair Removal, Headlight Restoration, Ceramic Coating, Odor Removal, Water Spot Removal
+
+**Vehicle Types Supported:**
+- Small Cars, Sedan, SUV/Crossover, MPV/7-Seater, Pickup/4x4, Luxury/Sports Car
+
+## 🚀 Tech Stack
+
+- **Framework:** Next.js 15 with App Router
+- **Styling:** Tailwind CSS
+- **Email Service:** Nodemailer with Gmail SMTP
+- **Deployment:** Vercel
+- **Language:** JavaScript/JSX
+
+## 📦 Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd jagawash
+   ```
+
+2. **Install dependencies**
+   ```bash
+   cd client
+   npm install
+   ```
+
+3. **Set up environment variables**
+   ```bash
+   cp env.example .env.local
+   ```
+   
+   Fill in your email configuration in `.env.local`
+
+4. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+5. **Open your browser**
+   
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+## ⚙️ Environment Configuration
+
+Create a `.env.local` file in the `client` directory with the following variables:
+
+```env
+# Email Configuration
+EMAIL_USER=your-email@gmail.com
+EMAIL_PASS=your-app-password
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_FROM=your-email@gmail.com
+EMAIL_TO=business-owner@gmail.com
+
+# App Configuration
+NEXT_PUBLIC_APP_URL=http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Gmail Setup
+1. Enable 2-factor authentication on your Gmail account
+2. Generate an App Password (not your regular Gmail password)
+3. Use the 16-character App Password in `EMAIL_PASS`
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🏗️ Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+client/
+├── app/                    # Next.js App Router
+│   ├── api/               # API routes
+│   ├── booking/           # Booking page
+│   └── globals.css        # Global styles
+├── components/            # React components
+│   ├── booking/          # Booking form components
+│   └── ui/               # Reusable UI components
+├── lib/                  # Utilities and configurations
+│   ├── constants.js      # Business data and validation
+│   └── email.js          # Email service
+└── public/               # Static assets
+```
 
-## Learn More
+## 📱 User Journey
 
-To learn more about Next.js, take a look at the following resources:
+1. **Landing Page** - View services, pricing, and business information
+2. **Vehicle Selection** - Choose vehicle type
+3. **Package Selection** - Select service package with detailed features
+4. **Add-ons** - Optional additional services
+5. **Scheduling** - Pick date and time (business hours validation)
+6. **Customer Info** - Enter contact and vehicle details
+7. **Confirmation** - Review booking and submit
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎯 Business Impact
 
-## Deploy on Vercel
+- **Reduces WhatsApp inquiries** with transparent pricing
+- **Prevents scheduling conflicts** through smart booking system
+- **Improves customer experience** with professional interface
+- **Streamlines operations** with automated email notifications
+- **Mobile-optimized** for existing WhatsApp user base
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+
+This is a personal portfolio project and is not currently accepting contributions.
+
+---
+
+**Note:** This project was developed as a portfolio piece demonstrating modern web development practices for service-based businesses.
