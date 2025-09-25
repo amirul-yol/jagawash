@@ -130,7 +130,7 @@ export default function BusinessInfo() {
                 <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                 <div>
                   <p className="text-white font-medium">Quality Guarantee</p>
-                  <p className="text-gray-400 text-sm">Satisfaction guaranteed or we'll make it right</p>
+                  <p className="text-gray-400 text-sm">Satisfaction guaranteed or we&apos;ll make it right</p>
                 </div>
               </div>
             </div>

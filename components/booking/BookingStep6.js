@@ -108,7 +108,7 @@ export default function BookingStep6({ bookingData, onBack }) {
         <div className="bg-green-50 border border-green-200 rounded-lg p-6 mb-6">
           <h3 className="font-semibold text-green-800 mb-4">What happens next?</h3>
           <div className="space-y-2 text-sm text-green-700">
-            <p>✓ We've received your booking and sent the details to our team</p>
+            <p>✓ We&apos;ve received your booking and sent the details to our team</p>
             <p>✓ {BUSINESS_INFO.pic} will contact you to confirm the appointment</p>
             <p>✓ Please arrive on time for your scheduled slot</p>
             <p>✓ Payment will be collected after the service is completed</p>

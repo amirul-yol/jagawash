@@ -107,7 +107,7 @@ export default function BookingStep4({ selectedDate, selectedTime, onDateTimeSel
 
           {tempDate && isDateUnavailable(tempDate) && (
             <div className="mt-2 p-2 bg-red-50 border border-red-200 rounded text-sm text-red-700">
-              Sorry, we're closed on this date. Please select another day.
+              Sorry, we&apos;re closed on this date. Please select another day.
             </div>
           )}
         </div>

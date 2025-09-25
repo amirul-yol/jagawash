@@ -23,7 +23,7 @@ export default function BookingStep1({ selectedVehicle, onVehicleSelect, onNext 
     <div>
       <div className="text-center mb-8">
         <h2 className="text-2xl font-bold text-gray-900 mb-2">Choose Your Vehicle Type</h2>
-        <p className="text-gray-600">Select the type of vehicle you'd like to have washed</p>
+        <p className="text-gray-600">Select the type of vehicle you&apos;d like to have washed</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">

@@ -193,7 +193,7 @@ export default function BookingStep5({ customerInfo, onCustomerInfoChange, onNex
               <h3 className="text-sm font-medium text-gray-900">Privacy & Security</h3>
               <p className="text-xs text-gray-600 mt-1">
                 Your information is kept confidential and used only for this booking. 
-                We'll contact you via phone or email about your appointment.
+                We&apos;ll contact you via phone or email about your appointment.
               </p>
             </div>
           </div>
